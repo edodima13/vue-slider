@@ -12,7 +12,9 @@
     <div id="root">
         <div  id="primocontainer" class="container">
             <div v-for="card in cards">
-                {{card.title}} {{card.text}} {{card.items}}
+                <img :src="card.items" alt="">
+                <h1>{{card.title}}</h1>
+                <p>{{card.text}}</p>
             </div>
             
         </div>
@@ -20,8 +22,7 @@
            <!--<div >
                 {{card.items}}
             </div>-->
-            <img v-for="items in cards" :src="items" alt="">
-            
+            <img v-for="items in cards" :src="items.items" alt="">
         </div>
     </div>
     
