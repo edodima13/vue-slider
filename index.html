@@ -13,8 +13,15 @@
         <div  id="primocontainer" class="container">
             <div v-for="card in cards">
                 <img :src="card.items" alt="">
-                <h1>{{card.title}}</h1>
-                <p>{{card.text}}</p>
+                <div class="buttons">
+                    <button>prev</button>
+                    <button @click="prossimo">next</button>
+                </div>
+                <div>
+                    <h1>{{card.title}}</h1>
+                    <p>{{card.text}}</p>
+                </div>
+                
             </div>
             
         </div>

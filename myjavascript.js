@@ -30,7 +30,9 @@ var app = new Vue({
         ]
     } ,
     methods : {
-
+        prossimo: function(){
+            console.log("ciao")
+        }
     }
 })
 

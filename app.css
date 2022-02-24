@@ -70,11 +70,25 @@ h3,p{
     left : 10px
 }
 
-h3{
-    margin-left: 87% ;
+#primocontainer .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+button{
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    padding: 6px;
+    color: white;
 }
 
 
+
+h3{
+    margin-left: 87% ;
+}
 
 #primocontainer{
     max-height: 250px;
@@ -82,7 +96,6 @@ h3{
 
 body #carousel{
     max-width: 100px;
-    position: relative;
 }
 
 body #carousel img{
