@@ -88,6 +88,14 @@ button{
 }
 
 
+#primocontainer div{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
 
 h3{
     margin-left: 87% ;

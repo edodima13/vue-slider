@@ -27,11 +27,17 @@ var app = new Vue({
                 text : 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
                 items :'img/05.jpg',
             }
-        ]
+        ],
+        currentIndex: 0
     } ,
     methods : {
         prossimo: function(){
             console.log("ciao")
+            this.currentIndex++
+        },
+        precedente: function(){
+            console.log("ciao")
+            this.currentIndex--
         }
     }
 })

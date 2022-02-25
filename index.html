@@ -11,10 +11,10 @@
 <body>
     <div id="root">
         <div  id="primocontainer" class="container">
-            <div v-for="card in cards">
+            <div v-for="(card,i) in cards" :class="i === currentIndex? 'active' : '' ">
                 <img :src="card.items" alt="">
                 <div class="buttons">
-                    <button>prev</button>
+                    <button @click="precedente">prev</button>
                     <button @click="prossimo">next</button>
                 </div>
                 <div class="testo">
@@ -26,9 +26,6 @@
             
         </div>
         <div   id="carousel" class="container">
-           <!--<div >
-                {{card.items}}
-            </div>-->
             <img v-for="items in cards" :src="items.items" alt="">
         </div>
     </div>
